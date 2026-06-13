@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-saffron: #FF6B00;
+  --color-green-india: #138808;
+  --color-primary: #001b44;
+  --color-secondary: #0056c6;
+}
+
+/* Custom styles for smoother experiences */
+body {
+  font-family: var(--font-sans);
+  background-color: #f8f9ff;
+  color: #121c28;
+}
+
+/* Custom animation for ticker */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  105% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 45s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Hide scrollbars but keep functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
