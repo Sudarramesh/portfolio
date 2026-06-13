@@ -338,7 +338,7 @@ export default function App() {
                 <p className="text-slate-400 text-xs md:text-sm leading-relaxed max-w-2xl">
                   Hello! I am a passionate, high-performance tech researcher specializing in 
                   <strong className="text-slate-200"> Artificial Intelligence, Deep Learning models, and relational Business Intelligence platforms</strong>. 
-                  Currently completing my B.Tech in AI and Data Science from Rohini College of Engineering, I design intelligent full-stack applications and formulate corporate dashboard data to support strategic, values-based decisions.
+                  Currently completing my B.Tech in AI and Data Science from Rohini College of Engineering, I design intelligent full-stack applications and  I build AI, machine learning, and data analytics solutions that solve real-world problems.
                 </p>
 
                 {/* Grid stats cards */}
@@ -1172,7 +1172,7 @@ export default function App() {
                     <Mail size={16} className="text-amber-500 shrink-0 mt-0.5" />
                     <div>
                       <h4 className="font-bold text-white mb-0.5 uppercase tracking-wide text-[10px] text-slate-500">Primary Email</h4>
-                      <p className="font-mono text-slate-350">sudarramesh541@gmail.com</p>
+                      <p className="font-mono text-slate-350">suderramesh541@gmail.com</p>
                     </div>
                   </div>
 
@@ -1180,7 +1180,7 @@ export default function App() {
                     <PhoneCall size={16} className="text-amber-500 shrink-0 mt-0.5" />
                     <div>
                       <h4 className="font-bold text-white mb-0.5 uppercase tracking-wide text-[10px] text-slate-500">Contact Number</h4>
-                      <p className="font-mono text-slate-350">+91 7604882003</p>
+                      <p className="font-mono text-slate-350">+91 7604992903</p>
                     </div>
                   </div>
 
@@ -1190,7 +1190,7 @@ export default function App() {
                       <h4 className="font-bold text-white mb-0.5 uppercase tracking-wide text-[10px] text-slate-500">Physical Address</h4>
                       <p className="leading-relaxed text-slate-350">
                         27/2, Amman Kovil Street,<br />
-                        Dalpathi Samuthiram Meloor, 627101,<br />
+                        Dalapathi Samuthiram Meloor, 627101,<br />
                         Tirunelveli / Kanyakumari, Tamil Nadu, India.
                       </p>
                     </div>
@@ -1200,7 +1200,7 @@ export default function App() {
                 {/* PDF CV Download Simulation button */}
                 <div className="pt-6 border-t border-slate-800">
                   <a
-                    href="mailto:sudarramesh541@gmail.com?subject=Inquiry from Portfolio Website"
+                    href="mailto:suderramesh541@gmail.com?subject=Inquiry from Portfolio Website"
                     className="w-full py-3.5 bg-slate-950 hover:bg-slate-850 border border-slate-800 text-amber-500 hover:text-amber-400 transition-colors uppercase font-black tracking-widest text-[10px] font-mono rounded-xl flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <Download size={14} />

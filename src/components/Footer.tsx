@@ -41,15 +41,15 @@ export const Footer: React.FC<FooterProps> = ({ displaySource = 'portfolio' }) =
             <div className="space-y-1.5 text-xs">
               <p className="flex items-center gap-2">
                 <Mail size={12} className="text-amber-400" />
-                <span className="font-mono text-[11px]">sudarramesh541@gmail.com</span>
+                <span className="font-mono text-[11px]">suderramesh541@gmail.com</span>
               </p>
               <p className="flex items-center gap-2">
                 <Phone size={12} className="text-amber-400" />
-                <span className="font-mono text-[11px]">+91 7604882003</span>
+                <span className="font-mono text-[11px]">+91 7604992903</span>
               </p>
               <p className="flex items-center gap-2">
                 <MapPin size={12} className="text-amber-400" />
-                <span className="text-[11px] text-slate-400">Dalpathi Samuthiram, Tirunelveli, 627101</span>
+                <span className="text-[11px] text-slate-400">Dalapathi Samuthiram, Tirunelveli, 627101</span>
               </p>
             </div>
           </div>
