@@ -344,8 +344,8 @@ export default function App() {
                 {/* Grid stats cards */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 font-mono">
                   <div className="p-4 bg-slate-900 border border-slate-800 rounded-2xl">
-                    <div className="text-2xl font-black text-amber-400">RCET</div>
-                    <div className="text-[9px] text-slate-500 uppercase tracking-wider font-bold">Class of 2026</div>
+                    <div className="text-2xl font-black text-amber-400">500+</div>
+                    <div className="text-[9px] text-slate-500 uppercase tracking-wider font-bold">GitHub Commits</div>
                   </div>
                   <div className="p-4 bg-slate-900 border border-slate-800 rounded-2xl">
                     <div className="text-2xl font-black text-indigo-400">5+</div>
