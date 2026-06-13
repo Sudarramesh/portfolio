@@ -348,16 +348,16 @@ export default function App() {
                     <div className="text-[9px] text-slate-500 uppercase tracking-wider font-bold">Class of 2026</div>
                   </div>
                   <div className="p-4 bg-slate-900 border border-slate-800 rounded-2xl">
-                    <div className="text-2xl font-black text-indigo-400">3+</div>
+                    <div className="text-2xl font-black text-indigo-400">5+</div>
                     <div className="text-[9px] text-slate-500 uppercase tracking-wider font-bold">Internships</div>
                   </div>
                   <div className="p-4 bg-slate-900 border border-slate-800 rounded-2xl">
-                    <div className="text-2xl font-black text-amber-400">1st</div>
-                    <div className="text-[9px] text-slate-500 uppercase tracking-wider font-bold">Sports Star</div>
+                    <div className="text-2xl font-black text-amber-400">50+</div>
+                    <div className="text-[9px] text-slate-500 uppercase tracking-wider font-bold">Real-World Projects</div>
                   </div>
                   <div className="p-4 bg-slate-900 border border-slate-800 rounded-2xl">
-                    <div className="text-2xl font-black text-indigo-400">95%</div>
-                    <div className="text-[9px] text-slate-500 uppercase tracking-wider font-bold">Code Safety</div>
+                    <div className="text-2xl font-black text-indigo-400">10+</div>
+                    <div className="text-[9px] text-slate-500 uppercase tracking-wider font-bold">Certifications</div>
                   </div>
                 </div>
 
