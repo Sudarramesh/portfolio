@@ -36,7 +36,7 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
             <span className="mx-10 flex items-center gap-1.5 text-slate-350">
               <Mail size={11} className="text-amber-400 shrink-0" />
-              Connect instantly via email: <span className="text-amber-400 font-bold">sudarramesh541@gmail.com</span>
+              Connect instantly via email: <span className="text-amber-400 font-bold">suderramesh541@gmail.com</span>
             </span>
           </div>
         </div>
