@@ -106,13 +106,13 @@ export default function App() {
       }
       const data = await response.json();
       if (data.schemes && Array.isArray(data.schemes) && data.schemes.length > 0) {
-        const newSchemes = data.schemes.filter(
+        const newSchemes: Scheme[] = data.schemes.filter(
           (newS: Scheme) => !allSchemes.some((oldS) => oldS.id === newS.id)
         );
 
         if (newSchemes.length > 0) {
           const updated = [...allSchemes];
-          newSchemes.forEach((s) => updated.push(s));
+          newSchemes.forEach((s: Scheme) => updated.push(s));
           setAllSchemes(updated);
           localStorage.setItem('sarkari_schemes', JSON.stringify(updated));
           setSyncMessage(`Success! Synced ${newSchemes.length} new government schemes.`);
@@ -159,7 +159,7 @@ export default function App() {
   };
 
   // Projects navigation sub-demo state
-  const [selectedProject, setSelectedProject] = useState<'yojana' | 'powerbi' | 'chatbot-quiz' | null>('yojana');
+  const [selectedProject, setSelectedProject] = useState<'yojana' | 'driverassist' | 'powerbi' | 'chatbot-quiz' | null>('yojana');
   const powerBIProjects = [
   {
     title: "HR Analytics Dashboard",
@@ -646,6 +646,14 @@ export default function App() {
                 > Gov Welfare Portal
                 </button>
                 <button
+                  onClick={() => setSelectedProject('driverassist')}
+                  className={`px-4 py-2 rounded-lg font-extrabold transition-all cursor-pointer ${
+                    selectedProject === 'driverassist' ? 'bg-amber-500 text-slate-950 font-black' : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  DriverAssist-it
+                </button>
+                <button
                   onClick={() => setSelectedProject('powerbi')}
                   className={`px-4 py-2 rounded-lg font-extrabold transition-all cursor-pointer ${
                     selectedProject === 'powerbi' ? 'bg-amber-500 text-slate-950 font-black' : 'text-slate-400 hover:text-white'
@@ -830,6 +838,72 @@ export default function App() {
                       currentLanguage="en"
                     />
                   </div>
+                </div>
+              </div>
+            )}
+
+            {/* ============ RENDER PROJECT 1.5: DRIVER ASSIST-IT LOGISTICS DISPATCH PORTAL ============ */}
+            {selectedProject === 'driverassist' && (
+              <div className="space-y-12 animate-fadeIn bg-slate-950">
+                <div className="bg-gradient-to-r from-slate-900/30 to-sky-900/10 border border-slate-800 p-8 rounded-3xl relative overflow-hidden space-y-4">
+                  <div className="absolute top-0 right-0 p-4 opacity-10">
+                    <Activity size={160} className="text-sky-400" />
+                  </div>
+
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/25 text-cyan-400 text-[10px] font-mono uppercase font-bold tracking-wider">
+                    <span className="w-2 h-2 rounded-full bg-cyan-500 animate-ping"></span>
+                    DriverAssist-it Showcase
+                  </div>
+
+                  <h3 className="text-2xl font-black text-white">DriverAssist-it — Smart Driver Dispatch & Fleet Intelligence</h3>
+                  <p className="text-xs text-slate-400 max-w-2xl leading-relaxed">
+                    A driver-centric logistics portal prototype built with React, TypeScript, and local persistence. It simulates job discovery, driver matching, route analytics and application tracking for modern Indian transport operations.
+                  </p>
+
+                  <div className="flex gap-3 text-[10px] font-mono text-slate-400">
+                    <span className="px-2.5 py-1 rounded-full bg-slate-950 border border-slate-850">React 19 & Vite</span>
+                    <span className="px-2.5 py-1 rounded-full bg-slate-950 border border-slate-850">Driver Job Dispatch</span>
+                    <span className="px-2.5 py-1 rounded-full bg-slate-950 border border-slate-850">Geo-Route Capacity</span>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div className="p-6 bg-slate-900 border border-slate-800 rounded-3xl space-y-4">
+                    <h4 className="text-sm font-extrabold text-white">Key Capabilities</h4>
+                    <ul className="ml-4 list-disc text-slate-400 text-[11px] space-y-3">
+                      <li>Browse driver jobs and shift postings with regional routing intelligence.</li>
+                      <li>Manage applications, track driver status, and simulate dispatch confirmations.</li>
+                      <li>Optimize matches using route distance and duty hours compliance.</li>
+                      <li>Persist fleet state locally so workflow stays smooth across sessions.</li>
+                    </ul>
+                  </div>
+
+                  <div className="p-6 bg-slate-900 border border-slate-800 rounded-3xl space-y-4">
+                    <h4 className="text-sm font-extrabold text-white">Why this project stands out</h4>
+                    <div className="space-y-3 text-slate-400 text-[11px] leading-relaxed">
+                      <p>
+                        This project demonstrates full-stack thinking applied to logistics automation and driver workforce support. It blends user experience, data modeling, and dispatch intelligence in a compact platform.
+                      </p>
+                      <p>
+                        The portal is ideal for operator dispatchers, fleet managers, and drivers who need fast visibility into available jobs, route efficiency, and live application progress.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-6 bg-slate-900 border border-slate-800 rounded-3xl space-y-4">
+                  <h4 className="text-sm font-extrabold text-white">How to explore it</h4>
+                  <p className="text-[11px] text-slate-400 leading-relaxed">
+                    The DriverAssist-it workspace is available in the repository under <span className="font-mono text-slate-300">driver assist-it/driverassist-it</span>. It can be launched as a standalone Vite app to inspect the full driver dispatch workflow.
+                  </p>
+                  <a
+                    href="https://driver-assist-it.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-cyan-500 text-slate-950 font-black text-xs uppercase tracking-widest hover:bg-cyan-400 transition-colors"
+                  >
+                    Open Live DriverAssist-it Demo
+                  </a>
                 </div>
               </div>
             )}
